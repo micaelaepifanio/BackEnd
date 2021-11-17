@@ -48,16 +48,4 @@ class Contenedor {
     }
 }
 
-const contenedor = new Contenedor ("archivito.json")
-contenedor.save({ nombre: "Carlos Gomez"})
-contenedor.save({ nombre: "Juan Perez"})
-
-console.log(JSON.stringify(contenedor.getAll()))
-
-console.log(contenedor.getById(2))
-contenedor.deleteById(1)
-
-console.log(JSON.stringify(contenedor.getAll()))
-contenedor.deleteAll()
-
-
+module.exports = {Contenedor} 
